@@ -18,8 +18,8 @@ class Main {
 
 class Calculator {
     static Supplier<Calculator> instance = Calculator::new;
-    BinaryOperator<Integer> plus = (x, y) -> x + y;
-    BinaryOperator<Integer> minus = (x, y) -> x - y;
-    BinaryOperator<Integer> devide = (x, y) -> x / y;
+    static BinaryOperator<Integer> plus = (x, y) -> x + y;
+    static BinaryOperator<Integer> minus = (x, y) -> x - y;
+    static BinaryOperator<Integer> devide = (x, y) -> x / y;
     Consumer<Integer> println = System.out::println;
 }

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void main() {
+    void arithmeticExceptionTest() {
         Throwable exception = Assertions.assertThrows(ArithmeticException.class, () -> {
             throw new ArithmeticException("Деление на ноль невозможно");
         });
